@@ -31,11 +31,23 @@ function outputNames()
 /***** Funktionen 02b *****/
 // 2b. Parametrisierung + Datenübergabe von AUSSEN
 
-outputNames2("Esther"); // Argument --> Daten für Parameter
-outputNames2("Jan");
-outputNames2();
+// outputNames2("Esther"); // Argument --> Daten für Parameter
+// outputNames2("Jan");
+// outputNames2();
 
 function outputNames2(firstName) { // Parameter
     console.log("Hallo, " + firstName + "!"); 
+}
+
+/***** Funktionen 02c *****/
+// 2c. Mehrere Parameter / Argumente
+
+outputNames3("Maxine","Mützerich");
+
+const prompt = require('prompt-sync')({sigint: true});
+outputNames3(prompt("Vorname? : "),prompt("Nachname?: ")); // Piping
+
+function outputNames3(firstName, familyName) { // Parameter
+    console.log("Hallo, " + firstName + " " + familyName + "!");
 }
 
