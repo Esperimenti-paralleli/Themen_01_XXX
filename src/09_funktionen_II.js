@@ -18,7 +18,11 @@ output(divide(0,2));
 output(divide(3,0));
 output(divide(0,0));
 function divide(a,b) {
-    return a / b;
+if (b !== 0) {
+        return a / b;
+    } else {
+        return "Error: Divided by 0!";
+    }
 }
 
 // output(multiply(3,2));
