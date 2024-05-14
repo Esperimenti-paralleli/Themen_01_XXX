@@ -41,7 +41,7 @@ const age =  parseInt(prompt("Bitte Alter eingeben: ")); // "2" --> 2
 mapBeveragesToAge(firstName,age);
 
 
-function mapBeveragesToAge(name,age) {
+function mapBeveragesToAge(firstName,age) {
 
     switch (true) {
         case (age >= 0) && (age <= 5) :
